@@ -7,7 +7,7 @@
 
 **Classic Pong, Reimagined for the Modern Era** — Real-time multiplayer, cosmetic shop, XP progression, and global leaderboards.
 
-![Pong Arena Screenshot](docs/assets/screenshot1.jpg)
+![Pong Arena Screenshot](docs/assets/screenshot1.png)
 
 ## ✨ Features
 
