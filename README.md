@@ -9,9 +9,11 @@
 
 ## ✨ Game Preview
 
-| | |
+## ✨ Game Preview
+
+| 🕹️ Gameplay | 🏆 Game Over |
 | :---: | :---: |
-| <img src="docs/assets/screenshot1.png" height="300px" width="auto" /> | <img src="docs/assets/screenshot2.png" height="300px" width="auto" /> |
+| <img src="docs/assets/screenshot1.png" width="100%" /> | <img src="docs/assets/screenshot2.png" width="100%" /> |
 
 ## ✨ Features
 
