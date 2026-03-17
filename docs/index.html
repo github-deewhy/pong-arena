@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PONG ARENA — Multiplayer Pong with XP & Cosmetics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <meta name="description" content="Classic Pong reimagined: real-time multiplayer, XP progression, cosmetic shop, and global leaderboards. Play now!">
+  <meta property="og:title" content="PONG ARENA">
+  <meta property="og:description" content="Multiplayer Pong with XP, levels, and cosmetic unlocks">
+  <meta property="og:image" content="https://github-deewhy.github.io/pong-arena/assets/screenshot1.png">
+  <meta property="og:url" content="https://deewhy.ovh/pongarena/">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-animation">
+    <div class="grid"></div>
+    <div class="glow"></div>
+  </div>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="game-title">
+          <span class="title-icon">🏓</span>
+          PONG <span class="highlight">ARENA</span>
+        </h1>
+        <div class="version-badge">v3.4 — Phase 3 Complete</div>
+        <p class="hero-tagline">
+          Classic arcade gameplay meets modern progression.<br>
+          <span class="gradient-text">XP · Cosmetics · Leaderboards · Real-time multiplayer</span>
+        </p>
+        <div class="cta-buttons">
+          <a href="https://deewhy.ovh/pongarena/" class="btn btn-primary btn-large" target="_blank">
+            <span class="btn-icon">🎮</span>
+            PLAY NOW
+          </a>
+          <a href="#features" class="btn btn-outline btn-large">LEARN MORE</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">100+</span>
+            <span class="stat-label">Daily Players</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Paddle Skins</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">5</span>
+            <span class="stat-label">Ball Trails</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100</span>
+            <span class="stat-label">Levels</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Screenshot Showcase -->
+    <section class="showcase">
+      <div class="screenshot-grid">
+        <div class="screenshot-card main">
+          <img src="assets/screenshot1.png" alt="Pong Arena Gameplay" onerror="this.src='https://via.placeholder.com/800x600/0a0a1a/00ffff?text=PONG+ARENA+GAMEPLAY'">
+          <div class="screenshot-caption">Intense multiplayer matches</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="assets/screenshot3.png" alt="Cosmetic Shop" onerror="this.src='https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=COSMETIC+SHOP'">
+          <div class="screenshot-caption">Unlock skins with coins</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="assets/screenshot2.png" alt="Leaderboard" onerror="this.src='https://via.placeholder.com/400x300/0a0a1a/ffd700?text=LEADERBOARD'">
+          <div class="screenshot-caption">Global rankings</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2 class="section-title">GAME FEATURES</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Real-time Multiplayer</h3>
+          <p>Challenge players worldwide with Socket.io. Low-latency, responsive gameplay.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>XP & Leveling</h3>
+          <p>Earn XP from every match. Level up from 1-100, unlock new content along the way.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🪙</div>
+          <h3>Coin Economy</h3>
+          <p>Win coins, build streaks, and spend them in the cosmetic shop. Daily login bonuses.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛍️</div>
+          <h3>Cosmetic Shop</h3>
+          <p>Unlock paddle skins (Fire, Ice, Neon, Galaxy, Gold) and ball trails (Comet, Flame, Rainbow, Ghost).</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>Global Leaderboard</h3>
+          <p>Compete for the top spot. See your rank and win percentage against other players.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Power-ups</h3>
+          <p>Speed boosts and paddle size modifiers add strategic depth to matches.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Firebase Auth</h3>
+          <p>Sign in with email/password or Google. Your progress syncs across devices.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Daily Streaks</h3>
+          <p>Login daily for bonus coins. 30-day streak? +100 coins!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap">
+      <h2 class="section-title">DEVELOPMENT ROADMAP</h2>
+      <div class="roadmap-timeline">
+        <div class="roadmap-item completed">
+          <div class="roadmap-marker">✅</div>
+          <div class="roadmap-content">
+            <h3>Phase 1: XP & Levels</h3>
+            <p>Complete — Server-side XP tracking, level calculation</p>
+          </div>
+        </div>
+        <div class="roadmap-item completed">
+          <div class="roadmap-marker">✅</div>
+          <div class="roadmap-content">
+            <h3>Phase 2: Coin System</h3>
+            <p>Complete — Daily rewards, login streaks</p>
+          </div>
+        </div>
+        <div class="roadmap-item completed current">
+          <div class="roadmap-marker">🎯</div>
+          <div class="roadmap-content">
+            <h3>Phase 3: Cosmetic Shop</h3>
+            <p>Complete — Paddle skins, ball trails, shop UI</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker">🔜</div>
+          <div class="roadmap-content">
+            <h3>Phase 4: Ranked Seasons</h3>
+            <p>Planned — Season pass, exclusive rewards</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker">🔜</div>
+          <div class="roadmap-content">
+            <h3>Phase 5: Premium Membership</h3>
+            <p>Planned — Stripe integration, double XP</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker">🔜</div>
+          <div class="roadmap-content">
+            <h3>Phase 6: Power-up Loadouts</h3>
+            <p>Planned — New power-up types, loadout system</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop Preview -->
+    <section class="shop-preview">
+      <h2 class="section-title">COSMETIC SHOP</h2>
+      <div class="shop-showcase">
+        <div class="shop-category">
+          <h3>🏓 PADDLE SKINS</h3>
+          <div class="skin-grid">
+            <div class="skin-item">
+              <div class="skin-emoji">🏓</div>
+              <div class="skin-name">Classic</div>
+              <div class="skin-badge">FREE</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">🔥</div>
+              <div class="skin-name">Fire</div>
+              <div class="skin-badge">LV5</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">❄️</div>
+              <div class="skin-name">Ice</div>
+              <div class="skin-badge">LV15</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">⚡</div>
+              <div class="skin-name">Neon</div>
+              <div class="skin-badge">LV30</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">🌌</div>
+              <div class="skin-name">Galaxy</div>
+              <div class="skin-badge">LV50</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">👑</div>
+              <div class="skin-name">Gold</div>
+              <div class="skin-badge">LV75</div>
+            </div>
+          </div>
+        </div>
+        <div class="shop-category">
+          <h3>✨ BALL TRAILS</h3>
+          <div class="skin-grid">
+            <div class="skin-item">
+              <div class="skin-emoji">⚪</div>
+              <div class="skin-name">Classic</div>
+              <div class="skin-badge">FREE</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">☄️</div>
+              <div class="skin-name">Comet</div>
+              <div class="skin-badge">LV10</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">🔥</div>
+              <div class="skin-name">Flame</div>
+              <div class="skin-badge">LV25</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">🌈</div>
+              <div class="skin-name">Rainbow</div>
+              <div class="skin-badge">LV45</div>
+            </div>
+            <div class="skin-item">
+              <div class="skin-emoji">👻</div>
+              <div class="skin-name">Ghost</div>
+              <div class="skin-badge">LV60</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+      <h2 class="section-title">BUILT WITH</h2>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          <span>Node.js</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+          <span>Express</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.io">
+          <span>Socket.io</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+          <span>Firebase</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <span>Vanilla JS</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          <span>Canvas API</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <h2>READY TO PLAY?</h2>
+      <p>Join the arena. Challenge players, earn coins, unlock cosmetics, and climb the leaderboard.</p>
+      <a href="https://deewhy.ovh/pongarena/" class="btn btn-primary btn-large" target="_blank">
+        <span class="btn-icon">🏓</span>
+        PLAY PONG ARENA NOW
+      </a>
+      <div class="github-link">
+        <a href="https://github.com/github-deewhy/pong-arena" target="_blank">
+          <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span>View on GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-logo">🏓 PONG ARENA</span>
+          <span class="footer-license">MIT License © 2026 DeeWHY</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/github-deewhy/pong-arena">GitHub</a>
+          <a href="https://deewhy.ovh/pongarena/">Live Game</a>
+          <a href="#" onclick="alert('Please feedback on GitHub Issues'); return false;">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
