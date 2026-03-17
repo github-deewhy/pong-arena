@@ -11,7 +11,7 @@
 
 | | |
 | :---: | :---: |
-| ![Pong Arena Screenshot 1](docs/assets/screenshot1.png) | ![Pong Arena Screenshot 2](docs/assets/screenshot2.png) |
+| <img src="docs/assets/screenshot1.png" height="300px" width="auto" /> | <img src="docs/assets/screenshot2.png" height="300px" width="auto" /> |
 
 ## ✨ Features
 
